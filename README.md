@@ -9,25 +9,48 @@
  * **R-T-C-C-O Prompting**: Built-in instruction design (Role, Task, Context, Constraint, Objective) ensuring high-quality and structured output.
  * **JSON Handling**: Properly parses API responses into a clean and readable format for the user.
 
- ## Installation and Setup
+## Installation and Setup
 
-- Clone the Repository
-  git clone [https://github.com/warigialakeisha-ship-it/wca-ai-tool-alpha.git](https://github.com/warigialakeisha-ship-it/wca-ai-tool-alpha.git)
-   
-- Installation and setup
-  clone with the repo :
-  git clone https://github.com/warigialakeisha-ship-it/wca-ai-tool-alpha.git
-  cd wca-ai-tool-alpha
-  Setting up venv :
-  python -m venv venv
-  source venv/Scripts/activate  # On Windows: venv\Scripts\activate
+1. Clone the repository and open its root directory.
 
--  Installing requirements (create a .env file in the root directory)
-  pip install anthropic python-dotenv
-  Cofiguration :
-  ANTHROPIC_API_KEY= claude-haiku-key-stored
-  Code running ( run from the command line)
-  python aiproject.py
+   ```bash
+   git clone https://github.com/WhyteRosee/wca-ai-tool-alpha.git
+   cd wca-ai-tool-alpha
+   ```
+
+2. Create a virtual environment and activate it.
+
+   On macOS or Linux:
+
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+   On Windows Command Prompt:
+
+   ```bat
+   py -m venv .venv
+   .venv\Scripts\activate.bat
+   ```
+
+3. Install the pinned dependencies.
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+4. Create a `.env` file in the repository root and replace `your_api_key_here` with your Anthropic API key.
+
+   ```dotenv
+   ANTHROPIC_API_KEY=your_api_key_here
+   ```
+
+5. Run the chatbot from the repository root.
+
+   ```bash
+   python chatbot.py
+   ```
 
 ### Group members
  
